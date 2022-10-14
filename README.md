@@ -1,6 +1,6 @@
 # Summary
 This project serves a little Java agent that removes the support for looking up Bean `Customizer`s inside `java.beans.Introspector`.
-It does so by essentially making the method a no-op and returning null.
+It does so by essentially making the internal `findCustomizerClass` method a no-op and returning null.
 
 This is inspired by the findings in Spring-Framework:
 - https://github.com/spring-projects/spring-framework/issues/29320
